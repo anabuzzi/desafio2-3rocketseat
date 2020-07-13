@@ -9,18 +9,18 @@ const card3 = document.querySelector('.card3')
 card1.addEventListener("click", function (){
         modalOverlay.querySelector("iframe").src = "https://rocketseat.com.br/starter"
         modalOverlay.classList.add('active') 
-        modalOverlay.classList.add('maximize')})
+})
 
 card2.addEventListener("click", function (){
         modalOverlay.querySelector("iframe").src = "https://rocketseat.com.br/launchbase"
         modalOverlay.classList.add('active')
-        modalOverlay.classList.add('maximize') })
+})
 
 
 card3.addEventListener("click", function (){
         modalOverlay.querySelector("iframe").src = "https://rocketseat.com.br/gostack"
         modalOverlay.classList.add('active')
-        modalOverlay.classList.add('maximize') })
+})
 
 
 // for (let card of cards) {
@@ -45,5 +45,6 @@ card3.addEventListener("click", function (){
 
   document.querySelector('.close-modal').addEventListener ("click", function() {    
     modalOverlay.classList.remove("active")
+    modalOverlay.classList.remove("maximize")
 //     // modalOverlay.querySelector("iframe").src = ""
 })
